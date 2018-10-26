@@ -1,9 +1,10 @@
 {
+  gROOT->Reset();
   //Data file containing final errors and parameters
-  char  dataafile[]="DATA/bkg4finalEnergyerror.dat";//A,mean,sigma,error in A,error in mean, error in sigma,N
-  char pdfresoluton[]="PLOTS/bkg4resolutionplot.pdf"; //pdf file to save the plot
-  const   char* finalresults="DATA/bkg4results_from_resolution.dat";//stores the results obtained form the resolution plot
-  const  char* savingtoroot="ROOTFILES/bkg4resolution.root";// saves the plot in the root file
+  char  dataafile[]="DATA/bkg0finalEnergyerror.dat";//A,mean,sigma,error in A,error in mean, error in sigma,N
+  char pdfresoluton[]="PLOTS/bkg0resolutionplot.pdf"; //pdf file to save the plot
+  const   char* finalresults="DATA/bkg0results_from_resolution.dat";//stores the results obtained form the resolution plot
+  const  char* savingtoroot="ROOTFILES/bkg0resolution.root";// saves the plot in the root file
   ifstream inputres(dataafile);
   if(inputres.is_open())
     {
